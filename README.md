@@ -1,5 +1,5 @@
 ```diff
-+ Hominid Ancestral Population analysis (HARP)
++ **H**ominid Ancestral Population analysis (HARP)
 ```
 
 <div class="text-purple">
