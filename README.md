@@ -1,1 +1,1 @@
-# Aquila_MSA
+# Hominid Ancestral Population analysis (HARP)
