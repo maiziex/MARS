@@ -1,3 +1,3 @@
 ```diff
-+ Hominid Ancestral Population analysis (HARP)
++ **H**ominid **A**ncestral **P**opulation analysis (HARP)
 ```
