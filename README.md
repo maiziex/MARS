@@ -5,7 +5,7 @@
 	</p>
 </p>
 
-***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
+                         ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
 ## Install through Bioconda (The latest version 1.0.0):
 ```
 conda install HARP
