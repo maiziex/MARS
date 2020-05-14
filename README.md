@@ -1,5 +1,5 @@
-
- :octopus: ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) # :gorrila:
+![Gorilla Logo](https://cloud-cdn.questionable.services/gorilla-icon-64.png) 
+***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) # 
 ## Install through Bioconda (The latest version 1.0.0):
 ```
 conda install HARP
