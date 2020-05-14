@@ -1,3 +1,4 @@
+***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
 <p align="center">
 	<img src="https://github.com/maiziex/HARP/blob/master/source/Free_Ape_Vector.png"  width="402" height="282">
 	<p align="center">
@@ -5,7 +6,7 @@
 	</p>
 </p>
 
-   ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
+   
 ## Install through Bioconda (The latest version 1.0.0):
 ```
 conda install HARP
