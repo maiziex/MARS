@@ -1,16 +1,24 @@
 
  ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
-## Download:
+# Install through Bioconda (The latest version 1.0.0):
 ```
-git clone https://github.com/maiziex/HARP.git
+conda install HARP
+```
+(Please ensure <a href="https://bioconda.github.io/user/install.html#set-up-channels">channels</a> are properly setup for bioconda before installing) 
+
+```
+HARP_step1 --help
+HARP_step2 --help
+# You can also check the below corresponding scripts for more details
 ```
 
-## Dependencies:
+## Dependencies through Github install:
 HARP utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="https://github.com/lh3/minimap2/tree/master/misc">paftools (Called haploid assemblies based variants)</a>, <a href="https://tandem.bu.edu/trf/trf.html">trf (Tandem Repeats Finder)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
 Or you could just run "./install.sh" to install them, but make sure you have installed "conda" and "wget" first. 
 
-## Install:
+# Install through Github:
 ```
+git clone https://github.com/maiziex/HARP.git
 cd HARP
 chmod +x install.sh
 ./install.sh
@@ -61,6 +69,17 @@ HARP_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 #####  --SV_len: default = 20, it is the SV size you can define.
 
 #####  --num_threads: default = 15, it is the number of threads you can define to perform multialignment by muscle, which corresponds to number of SV.
+
+## Final Output:
+
+## Cite HARP:
+#### 
+##### <a href="https://www.biorxiv.org/content/10.1101/660605v1">bioRxiv link</a>
+
+
+## Troubleshooting:
+##### Please submit issues on the github page for <a href="https://github.com/maiziex/HARP/issues">Aquila</a>. 
+##### Or contact with me through <a href="xzhou15@cs.stanford.edu">xzhou15@cs.stanford.edu</a>
 
 
 
