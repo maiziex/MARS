@@ -2,49 +2,66 @@
  ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
 ## Download:
 ```
-git clone https://github.com/maiziex/AncestralCall.git
+git clone https://github.com/maiziex/HARP.git
 ```
 
 ## Dependencies:
-Ancestral utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="https://github.com/lh3/minimap2/tree/master/misc">paftools (Called haploid assemblies based variants)</a>, <a href="https://tandem.bu.edu/trf/trf.html">trf (Tandem Repeats Finder)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
+HARP utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="https://github.com/lh3/minimap2/tree/master/misc">paftools (Called haploid assemblies based variants)</a>, <a href="https://tandem.bu.edu/trf/trf.html">trf (Tandem Repeats Finder)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
 Or you could just run "./install.sh" to install them, but make sure you have installed "conda" and "wget" first. 
 
 ## Install:
 ```
-cd AncestralCall
+cd HARP
 chmod +x install.sh
 ./install.sh
 ```
 
 ## source folder:
-After running "./install.sh", a folder "source" would be download, it includes human GRCh38 reference fasta file, and reference fasta files for Orangutan and Chimpanzee which you can use for ancestral call. You could also just download them by yourself from the corresponding official websites. 
+After running "./install.sh", a folder "source" would be download, it includes human GRCh38 reference fasta file, and reference fasta files for Gorrila, Orangutan, Chimpanzee, and Macaca which you can use for ancestral call. You could also just download them by yourself from the corresponding official websites. 
 
 ## Running The Code:
-Put the "Ancestral/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
-Or use the fullpath of "Run_all_samples.py"
+Put the "HARP/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
+Or use the fullpath of "HARP_step1.py" and "HARP_step2.py"
 
 
-### Step 1: Generate "merged.vcf" for all samples, and single vcf for each sample
+### Step 1: Assemlby-based structural variants calling for population
 ```
-Run_all_samples.py --in_dir ./diploid_contig/  --ref_file ./source/genome.fa  --species_name_list "Chimp","Orang" --species_ref_list "./source/pan_troglodytes_ref.fasta","./source/pongo_abelii_ref.fasta"  --sample_list 'HG00250','HG00353','HG00512'
+HARP_step1.py --assembly_dir Aquila_results_30samples --ref_file ./source/genome.fa  --SV_len 20 --num_threads 2 --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','hgp','HLA1','HLA2','HLA3','HLA4','HLA5','HLA7','HLA9','HLA10'  --chr_start 21 --chr_end 21 --out_dir Results_SV_calls
 ```
 #### *Required parameters
-##### --in_dir: "./diploid_contig/" is the input folder where you store the diploid assembled contig files. 
+##### --assembly_dir: "Aquila_results_30samples" is the input folder where you store the diploid assembled contig files for each sample.  
 
-##### --ref_file: "./GRCh38_reference/genome.fa" is the human reference fasta file which can be download by running "./install.sh". 
+##### --ref_file: "./source/genome.fa" is the human reference fasta (hg38) file which can be download by running "./install.sh". 
 
-#####  --species_name_list: "Chimp","Orang" are the species's name you can define. Each name is seperately by comma (","). 
-
-#####  --species_ref_list: "pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta" are the reference fasta files for each species which you defined in the "--species_name_list", respectivley. Each reference file is seperately by comma (",") 
- 
 #####  --sample_list: 'HG00250','HG00353','HG00512' are the sample names corresponding to your contig files, which is the prefix of the contig files. 
 
 #### *Optional parameters
-#####  --out_dir: default = ./Ancestral_results/, it is the folder name you can define to store the final results.  
+#####  --out_dir: default = ./Results_SV_calls, it is the folder name you can define to store the final results.  
 
 #####  --SV_len: default = 20, it is the SV size you can define.
 
-#####  --num_threads: default = 2, it is the number of threads you can define, which corresponds to number of samples.
+#####  --num_threads: default = 2, it is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of samples.
 
-### Step 2: Generate all the multiple-alignments files for each sample. 
+### Step 2: Generate the population multiple-alignments files for each SV, and SVs with ancestral state 
+```
+HARP_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples --ref_file ./source/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','hgp','HLA1','HLA2','HLA3','HLA4','HLA5','HLA7','HLA9','HLA10' --chr_start 21 --chr_end 21 --out_dir Results_MSA_HARP --Ape_ref_list "./source/Gorilla_gorilla_ref.fasta","./source/pan_troglodytes_ref.fasta","./source/pongo_abelii_ref.fasta","./source/macaca_mulatta_ref.fasta" --num_threads 15
+```
+#### *Required parameters
+##### --in_dir: Results_SV_calls is the folder to store SV calling results from step1.
+##### --assembly_dir: "Aquila_results_30samples" is the input folder where you store the diploid assembled contig files for each sample.  
+
+##### --ref_file: "./source/genome.fa" is the human reference fasta (hg38) file which can be download by running "./install.sh". 
+
+#####  --sample_list: 'HG00250','HG00353','HG00512' are the sample names corresponding to your contig files, which is the prefix of the contig files. 
+##### --Ape_ref_list: "Gorilla_gorilla_ref.fasta", "pan_troglodytes_ref.fasta", "pongo_abelii_ref.fasta", and "macaca_mulatta_ref.fasta" are the reference fasta files for each Ape. Each reference file is seperately by comma (",") 
+
+#### *Optional parameters
+#####  --out_dir: default = ./Results_MSA_HARP, it is the folder name you can define to store the final results.  
+
+#####  --SV_len: default = 20, it is the SV size you can define.
+
+#####  --num_threads: default = 15, it is the number of threads you can define to perform multialignment by muscle, which corresponds to number of SV.
+
+
+
 
