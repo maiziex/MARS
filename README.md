@@ -1,4 +1,4 @@
-![Gorilla Logo](https://cloud-cdn.questionable.services/gorilla-icon-64.png) 
+![Gorilla Logo](https://github.com/maiziex/HARP/blob/master/source/Free_Ape_Vector.png) 
 ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) # 
 ## Install through Bioconda (The latest version 1.0.0):
 ```
