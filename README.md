@@ -1,6 +1,6 @@
 
  ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
-# Install through Bioconda (The latest version 1.0.0):
+## Install through Bioconda (The latest version 1.0.0):
 ```
 conda install HARP
 ```
@@ -16,7 +16,7 @@ HARP_step2 --help
 HARP utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="https://github.com/lh3/minimap2/tree/master/misc">paftools (Called haploid assemblies based variants)</a>, <a href="https://tandem.bu.edu/trf/trf.html">trf (Tandem Repeats Finder)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
 Or you could just run "./install.sh" to install them, but make sure you have installed "conda" and "wget" first. 
 
-# Install through Github:
+## Install through Github:
 ```
 git clone https://github.com/maiziex/HARP.git
 cd HARP
