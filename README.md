@@ -1,5 +1,5 @@
 
- :octopus: ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) # 
+ :octopus: ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) # :gorrila:
 ## Install through Bioconda (The latest version 1.0.0):
 ```
 conda install HARP
