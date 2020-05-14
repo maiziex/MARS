@@ -78,7 +78,7 @@ HARP_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 
 
 ## Troubleshooting:
-##### Please submit issues on the github page for <a href="https://github.com/maiziex/HARP/issues">Aquila</a>. 
+##### Please submit issues on the github page for <a href="https://github.com/maiziex/HARP/issues">HARP</a>. 
 ##### Or contact with me through <a href="xzhou15@cs.stanford.edu">xzhou15@cs.stanford.edu</a>
 
 
