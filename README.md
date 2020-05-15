@@ -1,6 +1,6 @@
 ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
 <p align="center">
-	<img src="https://github.com/maiziex/HARP/blob/master/source/HARP_icon.pdf"  width="250" height="200">
+	<img src="https://github.com/maiziex/HARP/blob/master/source/HARP_icon.png"  width="250" height="200">
 	<p align="center">
 		<em></em>
 	</p>
