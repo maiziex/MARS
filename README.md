@@ -61,7 +61,7 @@ MARS_step1.py --assembly_dir Aquila_results_30samples --ref_file ./source/genome
 
 ### Step 2: Generate the population multiple-alignments files for each SV, and SVs with ancestral state 
 ```
-MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples --ref_file ./source/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','hgp','HLA1','HLA2','HLA3','HLA4','HLA5','HLA7','HLA9','HLA10' --chr_start 21 --chr_end 21 --out_dir Results_MSA_HARP --Ape_ref_list "./source/Gorilla_gorilla_ref.fasta","./source/pan_troglodytes_ref.fasta","./source/pongo_abelii_ref.fasta","./source/macaca_mulatta_ref.fasta" --num_threads 15
+MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples --ref_file ./source/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','hgp','HLA1','HLA2','HLA3','HLA4','HLA5','HLA7','HLA9','HLA10' --chr_start 21 --chr_end 21 --out_dir Results_MSA_MARS --Ape_ref_list "./source/Gorilla_gorilla_ref.fasta","./source/pan_troglodytes_ref.fasta","./source/pongo_abelii_ref.fasta","./source/macaca_mulatta_ref.fasta" --num_threads 15
 ```
 #### *Required parameters
 ##### --in_dir: Results_SV_calls is the folder to store SV calling results from step1.
@@ -73,7 +73,7 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 ##### --Ape_ref_list: "Gorilla_gorilla_ref.fasta", "pan_troglodytes_ref.fasta", "pongo_abelii_ref.fasta", and "macaca_mulatta_ref.fasta" are the reference fasta files for each Ape. Each reference file is seperately by comma (",") 
 
 #### *Optional parameters
-#####  --out_dir: default = ./Results_MSA_HARP, it is the folder name you can define to store the final results.  
+#####  --out_dir: default = ./Results_MSA_MARS, it is the folder name you can define to store the final results.  
 
 #####  --SV_len: default = 20, it is the SV size you can define.
 
@@ -87,7 +87,7 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 
 
 ## Troubleshooting:
-##### Please submit issues on the github page for <a href="https://github.com/maiziex/HARP/issues">HARP</a>. 
+##### Please submit issues on the github page for <a href="https://github.com/maiziex/MARS/issues">MARS</a>. 
 
 
 
