@@ -1,4 +1,4 @@
-***M***ultiple ***A***lignment-based ***R***efinement of ***S***Vs (MARS)
+***M***ultiple ***A***lignment-based ***R***efinement of ***S***vs (MARS)
 
 ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
 <p align="center">
