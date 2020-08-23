@@ -57,7 +57,7 @@ Or use the fullpath of "MARS_step1.py" and "MARS_step2.py"
 
 ### Step 1: Assembly-based structural variants calling for population
 ```
-MARS_step1.py  --assembly_dir Aquila_results_30samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --SV_len 20 --num_threads 2 // --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','HGP10X','SL10X1','SL10X2','SL10X3','SL10X4','SL10X5','SL10X7','SL10X9','SL10X10'  --chr_start 1 --chr_end 23 --out_dir Results_SV_calls
+MARS_step1.py  --assembly_dir Aquila_results_30samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --SV_len 20 --num_threads 2  --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','HGP10X','SL10X1','SL10X2','SL10X3','SL10X4','SL10X5','SL10X7','SL10X9','SL10X10'  --chr_start 1 --chr_end 23 --out_dir Results_SV_calls
 ```
 #### *Required parameters
 ##### --assembly_dir: "Aquila_results_30samples" is the input folder where you store the diploid assembled contig files for each sample.  
