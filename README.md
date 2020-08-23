@@ -86,7 +86,7 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 
 ## Final Output:
 <p align="center">
-	<img src="https://github.com/maiziex/MARS/blob/master/source/HARP_icon.png"  width="400" height="200">
+	<img src="https://github.com/maiziex/MARS/blob/master/source/msa2.png"  width="400" height="200">
 	<p align="center">
 		<em></em>
 	</p>
