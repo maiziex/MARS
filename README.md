@@ -5,7 +5,7 @@
 		<em></em>
 	</p>
 </p>
-with a ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) mode
+with  ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) mode
 <p align="center">
 	<img src="https://github.com/maiziex/MARS/blob/master/source/HARP_icon.png"  width="400" height="200">
 	<p align="center">
