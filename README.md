@@ -90,14 +90,15 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 #####  --num_threads_bychr: it is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of chromosomes.
 
 ## Output files:
-SV with left and right 10bp flanking regions
+1. SV with left and right 10bp flanking regions: a txt file
 <p align="center">
 	<img src="https://github.com/maiziex/MARS/blob/master/source/msa1.png"  width="600" height="300">
 	<p align="center">
 		<em></em>
 	</p>
 </p>
-
+2. SV with left and right 500 flanking regions: a html file:
+<a href="https://github.com/maiziex/MARS/blob/master/source/chr21_23807653_23807725_del.html">channels</a>
 
 
 
