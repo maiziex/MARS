@@ -99,6 +99,15 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 #####  --num_threads_bychr: it is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of chromosomes.
 
 ## Output files:
+Final tables:
+1. SV_msa_table_chr*.txt
+2a. derived_del_msa_table_chr*.txt (set "--HARP_flag = 1")
+2b. derived_ins_msa_table_chr*.txt (set "--HARP_flag = 1")
+3c. derived_complex_msa_table_chr*.txt  (set "--HARP_flag = 1")
+3. SV_linked_with_gnomad_SNP_chr*.txt (set "-gnomod_flag = 1")
+4. Consensus_seq_for_SV_chr*.fasta
+
+We also output txt/html files for indiviudal SV:
 1. SV with 10bp left and right flanking regions around breakpoints: a txt file
 <p align="center">
 	<img src="https://github.com/maiziex/MARS/blob/master/source/msa3.png"  width="600" height="400">
