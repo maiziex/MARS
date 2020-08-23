@@ -2,8 +2,6 @@
 cd bin
 chmod +x *.py
 chmod -R 777 k8-0.2.4
-tar -xzf SPAdes-3.13.0-Linux.tar.gz
-rm SPAdes-3.13.0-Linux.tar.gz
 cd ..
 
 
@@ -11,11 +9,6 @@ cd ..
 wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/source.tar.gz
 tar -xvf source.tar.gz
 rm source.tar.gz
-
-
-wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/Uniqness_map.tar.gz
-tar -xvf Uniqness_map.tar.gz
-rm Uniqness_map.tar.gz
 
 
 if ! [ -x "$(command -v samtools)" ];
