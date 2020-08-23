@@ -15,7 +15,7 @@
 	
 </p>
 <p align="center">
-	<img src="https://github.com/maiziex/MARS/blob/master/source/msa2.png"  width="600" height="400">
+	<img src="https://github.com/maiziex/MARS/blob/master/source/msa2.png"  width="500" height="250">
 	<p align="center">
 		<em></em>
 	</p>
