@@ -104,7 +104,7 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 2. derived_del_msa_table_chr*.txt (set "--HARP_flag = 1")
 3. derived_ins_msa_table_chr*.txt (set "--HARP_flag = 1")
 4. derived_complex_msa_table_chr*.txt  (set "--HARP_flag = 1")
-5. SV_linked_with_gnomad_SNP_chr*.txt (set "-gnomod_flag = 1")
+5. SV_linked_with_gnomad_SNP_chr*.txt (set "-gnomad_flag = 1")
 6. Consensus_seq_for_SV_chr*.fasta
 
 #### We also output txt/html files for indiviudal SV:
