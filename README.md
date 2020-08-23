@@ -1,19 +1,24 @@
 ***M***ultiple ***A***lignment-based ***R***efinement of ***S***vs (MARS)
 <p align="center">
-	<img src="https://github.com/maiziex/MARS/blob/master/source/msa2.png"  width="500" height="300">
+	<img src="https://github.com/maiziex/MARS/blob/master/source/msa1.png"  width="500" height="300">
 	<p align="center">
 		<em></em>
 	</p>
 </p>
 
 ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) mode (set "--HARP_flag" to 1 )
-<p align="center">
+<p align="left">
 	<img src="https://github.com/maiziex/MARS/blob/master/source/HARP_icon.png"  width="400" height="200">
-	<p align="center">
+	<p align="left">
 		<em></em>
 	</p>
 </p>
-
+<p align="right">
+	<img src="https://github.com/maiziex/MARS/blob/master/source/msa2.png"  width="400" height="200">
+	<p align="right">
+		<em></em>
+	</p>
+</p>
    
 ## Install through Bioconda (The latest version 1.0.0):
 ```
