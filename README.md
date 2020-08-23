@@ -97,8 +97,8 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 		<em></em>
 	</p>
 </p>
-2. SV with left and right 500 flanking regions: a html file:
-<a href="https://github.com/maiziex/MARS/blob/master/source/chr21_23807653_23807725_del.html">channels</a>
+2. SV with left and right 500 flanking regions: a MSA html file:
+<a href="https://github.com/maiziex/MARS/blob/master/source/chr21_23807653_23807725_del.html">msa html file</a>
 
 
 
