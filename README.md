@@ -93,7 +93,7 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 #####  --num_threads_bychr: default = 2, it is the number of chromosomes you can define to perform MARS parallely.
 
 #####  --gnomad_flag_linked_snp; -gnomad_flag: default = 0. If flag set to 1, MARS will output linked dbSNP for each SV.
-#####  --gnomad_dir: If flag set to 1, the users need to download gnomad VCF files and give a path to the folder which stores these gnomad VCF files. 
+#####  --gnomad_dir: If flag set to 1, the users need to download gnomad VCF files and give a path to the folder which stores these gnomAD VCF files. (for example: use "wget https://storage.googleapis.com/gnomad-public/release/2.1.1/liftover_grch38/vcf/genomes/gnomad.genomes.r2.1.1.sites.10.liftover_grch38.vcf.bgz" to download gnomAD vcf for chr10, check here for <a href="https://gnomad.broadinstitute.org/downloads/">gnomAD downloads website</a>) 
 #####  --HARP_flag: default = 0. If flag set to 1, 
 #####  --Ape_ref_list: If --HARP_flag set to 1, the users need to iniatize the Ape reference genomes they want to use. "Gorilla_gorilla_ref.fasta", "pan_troglodytes_ref.fasta", "pongo_abelii_ref.fasta", and "macaca_mulatta_ref.fasta" are the reference fasta files for each Ape. Each reference file is seperately by comma (",") 
 #####  --num_threads_bychr: it is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of chromosomes.
