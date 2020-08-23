@@ -28,7 +28,7 @@ MARS_step2 --help
 ```
 
 ## Dependencies through Github install:
-MARS utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="https://github.com/lh3/minimap2/tree/master/misc">paftools (Called haploid assemblies based variants)</a>, <a href="https://tandem.bu.edu/trf/trf.html">trf (Tandem Repeats Finder)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
+MARS utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="https://github.com/lh3/minimap2/tree/master/misc">paftools (Called haploid assemblies based variants)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
 Or you could just run "./install.sh" to install them, but make sure you have installed "conda" and "wget" first. 
 
 ## Install through Github:
@@ -40,7 +40,7 @@ chmod +x install.sh
 ```
 
 ## source folder:
-After running "./install.sh", a folder "source" would be download, it includes human GRCh38 reference fasta file, and reference fasta files for Gorrila, Orangutan, Chimpanzee, and Macaca which you can use for ancestral call. You could also just download them by yourself from the corresponding official websites. 
+After running "./install.sh", a folder "source" would be download, and reference fasta files for Gorrila, Orangutan, Chimpanzee, and Macaca which you can use for ancestral call. You could also just download them by yourself from the corresponding official websites. 
 
 ## Running The Code:
 Put the "MARS/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
@@ -103,9 +103,7 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 
 
 
-## Cite HARP:
-#### 
-##### <a href="https://www.biorxiv.org/content/10.1101/660605v1">bioRxiv link</a>
+
 
 
 ## Troubleshooting:
