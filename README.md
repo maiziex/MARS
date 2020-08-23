@@ -7,18 +7,17 @@
 </p>
 
 ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) mode (set "--HARP_flag" to 1 )
-<p align="left">
+<p align="center">
 	<img src="https://github.com/maiziex/MARS/blob/master/source/HARP_icon.png"  width="400" height="200">
 	<p align="left">
 		<em></em>
 	</p>
-</p>
-<p align="right">
 	<img src="https://github.com/maiziex/MARS/blob/master/source/msa2.png"  width="400" height="200">
 	<p align="right">
 		<em></em>
 	</p>
 </p>
+
    
 ## Install through Bioconda (The latest version 1.0.0):
 ```
