@@ -55,7 +55,7 @@ Put the "MARS/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
 Or use the fullpath of "MARS_step1.py" and "MARS_step2.py"
 
 
-### Step 1: Assemlby-based structural variants calling for population
+### Step 1: Assembly-based structural variants calling for population
 ```
 MARS_step1.py  --assembly_dir Aquila_results_30samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --SV_len 20 --num_threads 2  --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','HGP10X','SL10X1','SL10X2','SL10X3','SL10X4','SL10X5','SL10X7','SL10X9','SL10X10'  --chr_start 1 --chr_end 23 --out_dir Results_SV_calls
 ```
@@ -73,7 +73,7 @@ MARS_step1.py  --assembly_dir Aquila_results_30samples --ref_file refdata-GRCh38
 
 #####  --num_threads: default = 2, it is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of samples.
 
-### Step 2: Generate the population multiple-alignments files for each SV, and SVs with ancestral state 
+### Step 2: Merge SV and Generate the multiple samples alignment-based SV files 
 ```
 MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','HGP10X','SL10X1','SL10X2','SL10X3','SL10X4','SL10X5','SL10X7','SL10X9','SL10X10' --chr_start 1 --chr_end 23 --out_dir Results_MSA_MARS --Ape_ref_list "Gorilla_gorilla_ref.fasta","pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta","macaca_mulatta_ref.fasta"  -gnomad_flag 1 --gnomad_dir gnomAD_hg38_snp --HARP_flag 1 --num_threads_bychr 3
 ```
@@ -101,7 +101,7 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 ## Output files:
 1. SV with 10bp left and right flanking regions around breakpoints: a txt file
 <p align="center">
-	<img src="https://github.com/maiziex/MARS/blob/master/source/msa3.png"  width="600" height="300">
+	<img src="https://github.com/maiziex/MARS/blob/master/source/msa3.png"  width="600" height="400">
 	<p align="center">
 		<em></em>
 	</p>
