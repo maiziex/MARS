@@ -6,7 +6,7 @@
 	</p>
 </p>
 
-***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) mode
+***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) mode (set --HARP_flag to 1 )
 <p align="center">
 	<img src="https://github.com/maiziex/MARS/blob/master/source/HARP_icon.png"  width="400" height="200">
 	<p align="center">
