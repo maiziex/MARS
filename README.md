@@ -1,6 +1,6 @@
 ***M***ultiple ***A***lignment-based ***R***efinement of ***S***vs (MARS)
 
-***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) 
+with a ***H***ominid ***A***ncest***r***al ***P***opulation analysis (HARP) mode
 <p align="center">
 	<img src="https://github.com/maiziex/MARS/blob/master/source/HARP_icon.png"  width="400" height="200">
 	<p align="center">
