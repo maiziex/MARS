@@ -1,6 +1,6 @@
 ***M***ultiple ***A***lignment-based ***R***efinement of ***S***vs (MARS)
 <p align="center">
-	<img src="https://github.com/maiziex/MARS/blob/master/source/msa1.png"  width="500" height="300">
+	<img src="https://github.com/maiziex/MARS/blob/master/source/msa2.png"  width="500" height="300">
 	<p align="center">
 		<em></em>
 	</p>
@@ -92,7 +92,7 @@ MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples
 ## Output files:
 SV with left and right 10bp flanking regions
 <p align="center">
-	<img src="https://github.com/maiziex/MARS/blob/master/source/msa1.png"  width="600" height="300">
+	<img src="https://github.com/maiziex/MARS/blob/master/source/msa2.png"  width="600" height="300">
 	<p align="center">
 		<em></em>
 	</p>
