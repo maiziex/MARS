@@ -1,6 +1,6 @@
 ***M***ultiple ***A***lignment-based ***R***efinement of ***S***vs (MARS)
 <p align="center">
-	<img src="https://github.com/maiziex/MARS/blob/master/source/msa3.png"  width="600" height="300">
+	<img src="https://github.com/maiziex/MARS/blob/master/source/msa3.png"  width="600" height="400">
 	<p align="center">
 		<em></em>
 	</p>
