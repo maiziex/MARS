@@ -1,4 +1,4 @@
-***M***ultiple ***A***lignment-based ***R***efinement of ***S***vs (MARS)
+***M***ultiple ***A***lignment-based ***R***efinement of ***S***vs in linked-reads (MARS_linkedreads)
 <p align="center">
 	<img src="https://github.com/maiziex/MARS/blob/master/source/msa3.png"  width="600" height="400">
 	<p align="center">
