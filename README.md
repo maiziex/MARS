@@ -57,17 +57,17 @@ Or use the fullpath of "MARS_step1.py" and "MARS_step2.py"
 
 ### Step 1: Assembly-based structural variants calling for population
 ```
-MARS_step1.py  --assembly_dir Aquila_results_30samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --SV_len 20 --num_threads 2  --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','HGP10X','SL10X1','SL10X2','SL10X3','SL10X4','SL10X5','SL10X7','SL10X9','SL10X10'  --chr_start 1 --chr_end 23 --out_dir Results_SV_calls
+MARS_step1.py  --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --SV_len 20 --num_threads 2  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step1_results
 ```
 #### *Required parameters
-##### --assembly_dir: "Aquila_results_30samples" is the input folder where you store the diploid assembled contig files for each sample by Aquila/Aquila_stLFR.  
+##### --assembly_dir: "Aquila_results_4samples" is the input folder where you store the diploid assembled contig files for each sample by Aquila/Aquila_stLFR.  
 
 ##### --ref_file: "refdata-GRCh38-2.1.0/fasta/genome.fa" is the human reference fasta (hg38) file. 
 
-#####  --sample_list: 'HG00250','HG00353','HG00512' ... are the sample names corresponding to your contig files, which is the prefix of the contig files. 
+##### --sample_list: 'HG00250','HG00353','HG00512' ... are the sample names corresponding to your contig files, which is the prefix of the contig files. 
 
 #### *Optional parameters
-#####  --out_dir: default = ./Results_SV_calls, it is the folder name you can define to store the final results.  
+#####  --out_dir: default = ./MARS_step1_results, it is the folder name you can define to store the final results.  
 
 #####  --SV_len: default = 20, it is the SV size you can define.
 
@@ -75,18 +75,18 @@ MARS_step1.py  --assembly_dir Aquila_results_30samples --ref_file refdata-GRCh38
 
 ### Step 2: Merge SV and Generate the multiple samples alignment-based SV files 
 ```
-MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_30samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513','HG00514','HG00731','HG00732','HG00733','HG00851','HG01971','HG02623','HG03115','HG03838','NA12878','NA18552','NA19068','NA19238','NA19239','NA19240','NA19440','NA19789','NA20587','NA24143','NA24149','NA24385','HGP10X','SL10X1','SL10X2','SL10X3','SL10X4','SL10X5','SL10X7','SL10X9','SL10X10' --chr_start 1 --chr_end 23 --out_dir Results_MSA_MARS --Ape_ref_list "Gorilla_gorilla_ref.fasta","pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta","macaca_mulatta_ref.fasta"  -gnomad_flag 1 --gnomad_dir gnomAD_hg38_snp --HARP_flag 1 --num_threads_bychr 3
+MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step2_results --Ape_ref_list "Gorilla_gorilla_ref.fasta","pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta","macaca_mulatta_ref.fasta"  -gnomad_flag 1 --gnomad_dir gnomAD_hg38_snp --HARP_flag 1 --num_threads_bychr 3
 ```
 #### *Required parameters
-##### --in_dir: Results_SV_calls is the folder to store SV calling results from step1.
-##### --assembly_dir: "Aquila_results_30samples" is the input folder where you store the diploid assembled contig files for each sample.  
+##### --in_dir: "MARS_step1_results" is the folder to store SV calling results from step1.
+##### --assembly_dir: "Aquila_results_4samples" is the input folder where you store the diploid assembled contig files for each sample.  
 
 ##### --ref_file: "refdata-GRCh38-2.1.0/fasta/genome.fa" is the human reference fasta (hg38) file. 
 
-#####  --sample_list: 'HG00250','HG00353','HG00512'... are the sample names corresponding to your contig files, which is the prefix of the contig files. 
+##### --sample_list: 'HG00250','HG00353','HG00512'... are the sample names corresponding to your contig files, which is the prefix of the contig files. 
 
 #### *Optional parameters
-#####  --out_dir: default = ./Results_MSA_MARS, it is the folder name you can define to store the final results.  
+#####  --out_dir: default = ./MARS_step2_results, it is the folder name you can define to store the final results.  
 
 #####  --SV_len: default = 20, it is the SV size you can define.
 
