@@ -54,6 +54,8 @@ After running "./install.sh", a folder "source" would be download, and reference
 Put the "MARS/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
 Or use the fullpath of "MARS_step1.py" and "MARS_step2.py"
 
+*We provide  <a href="https://github.com/maiziex/MARS/blob/master/example_data/run_example_data.md">a example dataset</a> to run the whole pipeline before you try it into the large dataset. 
+
 
 ### Step 1: Assembly-based structural variants calling for population
 ```
