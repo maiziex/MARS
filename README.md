@@ -86,7 +86,7 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 or add HARP_flag and/or gnomad_flag
 
 ```
-MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step2_results --num_threads_bychr 3 --HARP_flag 1 --Ape_ref_list "Gorilla_gorilla_ref.fasta","pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta","macaca_mulatta_ref.fasta"  -gnomad_flag 1 --gnomad_dir gnomAD_hg38_snp 
+MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step2_results --num_threads_bychr 3 --HARP_flag 1 --Ape_ref_list "Ape_ref/Gorilla_gorilla_ref.fasta","Ape_ref/pan_troglodytes_ref.fasta","Ape_ref/pongo_abelii_ref.fasta","Ape_ref/macaca_mulatta_ref.fasta"  -gnomad_flag 1 --gnomad_dir gnomAD_hg38_snp 
 ```
 
 #### *Required parameters
