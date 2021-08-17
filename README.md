@@ -86,6 +86,7 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 
 #### *Required parameters
 **--in_dir:** "MARS_step1_results" is the folder to store SV calling results from step1.
+
 **--assembly_dir:** "Aquila_results_4samples" is the input folder where you store the diploid assembled contig files for each sample.  
 
 **--ref_file:** "refdata-GRCh38-2.1.0/fasta/genome.fa" is the human reference fasta (hg38) file. 
