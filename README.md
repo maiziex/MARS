@@ -60,43 +60,47 @@ Or use the fullpath of "MARS_step1.py" and "MARS_step2.py"
 MARS_step1.py  --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --SV_len 20 --num_threads 2  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step1_results
 ```
 #### *Required parameters
-##### --assembly_dir: "Aquila_results_4samples" is the input folder where you store the diploid assembled contig files for each sample by Aquila/Aquila_stLFR.  
+**--assembly_dir:** "Aquila_results_4samples" is the input folder where you store the diploid assembled contig files for each sample by Aquila/Aquila_stLFR.  
 
-##### --ref_file: "refdata-GRCh38-2.1.0/fasta/genome.fa" is the human reference fasta (hg38) file. 
+**--ref_file:** "refdata-GRCh38-2.1.0/fasta/genome.fa" is the human reference fasta (hg38) file. 
 
-##### --sample_list: 'HG00250','HG00353','HG00512' ... are the sample names corresponding to your contig files, which is the prefix of the contig files. 
+**--sample_list:** 'HG00250','HG00353','HG00512' ... are the sample names corresponding to your contig files, which is the prefix of the contig files. 
 
 #### *Optional parameters
-#####  --out_dir: default = ./MARS_step1_results, it is the folder name you can define to store the final results.  
+**--out_dir:** default = ./MARS_step1_results, it is the folder name you can define to store the final results.  
 
-#####  --SV_len: default = 20, it is the SV size you can define.
+**--SV_len:** default = 20, it is the SV size you can define.
 
-#####  --num_threads: default = 2, it is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of samples.
+**--num_threads:** default = 2, it is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of samples.
 
 ### Step 2: Merge SV and Generate the multiple samples alignment-based SV files 
 ```
 MARS_step2.py  --in_dir Results_SV_calls --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step2_results --Ape_ref_list "Gorilla_gorilla_ref.fasta","pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta","macaca_mulatta_ref.fasta"  -gnomad_flag 1 --gnomad_dir gnomAD_hg38_snp --HARP_flag 1 --num_threads_bychr 3
 ```
 #### *Required parameters
-##### --in_dir: "MARS_step1_results" is the folder to store SV calling results from step1.
-##### --assembly_dir: "Aquila_results_4samples" is the input folder where you store the diploid assembled contig files for each sample.  
+**--in_dir:** "MARS_step1_results" is the folder to store SV calling results from step1.
+**--assembly_dir:** "Aquila_results_4samples" is the input folder where you store the diploid assembled contig files for each sample.  
 
-##### --ref_file: "refdata-GRCh38-2.1.0/fasta/genome.fa" is the human reference fasta (hg38) file. 
+**--ref_file:** "refdata-GRCh38-2.1.0/fasta/genome.fa" is the human reference fasta (hg38) file. 
 
-##### --sample_list: 'HG00250','HG00353','HG00512'... are the sample names corresponding to your contig files, which is the prefix of the contig files. 
+**--sample_list:** 'HG00250','HG00353','HG00512'... are the sample names corresponding to your contig files, which is the prefix of the contig files. 
 
 #### *Optional parameters
-#####  --out_dir: default = ./MARS_step2_results, it is the folder name you can define to store the final results.  
+**--out_dir:** default = ./MARS_step2_results, it is the folder name you can define to store the final results.  
 
-#####  --SV_len: default = 20, it is the SV size you can define.
+**--SV_len:** default = 20, it is the SV size you can define.
 
-#####  --num_threads_bychr: default = 2, it is the number of chromosomes you can define to perform MARS parallely.
+**--num_threads_bychr:** default = 2, it is the number of chromosomes you can define to perform MARS parallely.
 
-#####  --gnomad_flag_linked_snp; -gnomad_flag: default = 0. If flag set to 1, MARS will output linked dbSNP for each SV.
-#####  --gnomad_dir: If "gnomad_flag" set to 1, the users need to download gnomad VCF files and give a path to the folder which stores these gnomAD VCF files. (For example: use "wget https://storage.googleapis.com/gnomad-public/release/2.1.1/liftover_grch38/vcf/genomes/gnomad.genomes.r2.1.1.sites.10.liftover_grch38.vcf.bgz" to download gnomAD VCF file for chr10) For details, please check <a href="https://gnomad.broadinstitute.org/downloads/">gnomAD downloads website</a>) 
-#####  --HARP_flag: default = 0. If flag set to 1, 
-#####  --Ape_ref_list: If --HARP_flag set to 1, the users need to iniatize the Ape reference genomes they want to use. "Gorilla_gorilla_ref.fasta", "pan_troglodytes_ref.fasta", "pongo_abelii_ref.fasta", and "macaca_mulatta_ref.fasta" are the reference fasta files for each Ape. Each reference file is seperately by comma (",") 
-#####  --num_threads_bychr: It is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of chromosomes.
+**--gnomad_flag_linked_snp; -gnomad_flag:** default = 0. If flag set to 1, MARS will output linked dbSNP for each SV.
+
+**--gnomad_dir:** If "gnomad_flag" set to 1, the users need to download gnomad VCF files and give a path to the folder which stores these gnomAD VCF files. (For example: use "wget https://storage.googleapis.com/gnomad-public/release/2.1.1/liftover_grch38/vcf/genomes/gnomad.genomes.r2.1.1.sites.10.liftover_grch38.vcf.bgz" to download gnomAD VCF file for chr10) For details, please check <a href="https://gnomad.broadinstitute.org/downloads/">gnomAD downloads website</a>) 
+
+**--HARP_flag:** default = 0. If flag set to 1, 
+
+**--Ape_ref_list:** If --HARP_flag set to 1, the users need to iniatize the Ape reference genomes they want to use. "Gorilla_gorilla_ref.fasta", "pan_troglodytes_ref.fasta", "pongo_abelii_ref.fasta", and "macaca_mulatta_ref.fasta" are the reference fasta files for each Ape. Each reference file is seperately by comma (",") 
+
+**--num_threads_bychr:** It is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of chromosomes.
 
 ## Output files:
 #### Final tables:
