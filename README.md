@@ -107,7 +107,7 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 
 **--chr_start --chr_end:** For example: use "--chr_start 1 --chr_end 5"  will perform results for chromsomes 1,2,3,4,5. Use "--chr_start 22 --chr_end 22" will only assembly chromosome 22. 
 
-**--gnomad_flag_linked_snp; -gnomad_flag:** default = 0. If flag set to 1, MARS will output linked dbSNP for each SV.
+**--gnomad_flag_linked_snp; -gnomad_flag:** default = 0. If flag set to 1, MARS will output linked dbSNP from gnomad for each SV.
 
 **--gnomad_dir:** If "gnomad_flag" set to 1, the users need to download gnomad VCF files and give a path to the folder which stores these gnomAD VCF files. (For example: use "wget https://storage.googleapis.com/gnomad-public/release/2.1.1/liftover_grch38/vcf/genomes/gnomad.genomes.r2.1.1.sites.10.liftover_grch38.vcf.bgz" to download gnomAD VCF file for chr10) For details, please check <a href="https://gnomad.broadinstitute.org/downloads/">gnomAD downloads website</a>) 
 
