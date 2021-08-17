@@ -59,7 +59,7 @@ Or use the fullpath of "MARS_step1.py" and "MARS_step2.py"
 
 ### Step 1: Assembly-based structural variants calling for population
 ```
-MARS_step1.py  --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --SV_len 20 --num_threads 2  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step1_results
+MARS_step1.py  --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --SV_len 20  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step1_results
 ```
 #### *Required parameters
 **--assembly_dir:** "Aquila_results_4samples" is the input folder where you store the diploid assembled contig files for each sample by Aquila/Aquila_stLFR.  
@@ -80,7 +80,7 @@ MARS_step1.py  --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-
 
 ### Step 2: Merge SV and Generate the multiple samples alignment-based SV files 
 ```
-MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step2_results --num_threads_bychr 3
+MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step2_results 
 ```
 
 or add HARP_flag and/or gnomad_flag
