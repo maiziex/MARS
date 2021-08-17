@@ -75,6 +75,9 @@ MARS_step1.py  --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-
 
 **--num_threads:** default = 2, it is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of samples.
 
+**--chr_start --chr_end:** For example: use "--chr_start 1 --chr_end 5"  will perform results for chromsomes 1,2,3,4,5. Use "--chr_start 22 --chr_end 22" will only assembly chromosome 22. 
+
+
 ### Step 2: Merge SV and Generate the multiple samples alignment-based SV files 
 ```
 MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4samples --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa  --sample_list 'HG00250','HG00353','HG00512','HG00513' --chr_start 22 --chr_end 22 --out_dir MARS_step2_results --num_threads_bychr 3
@@ -102,6 +105,8 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 
 **--num_threads_bychr:** default = 2, it is the number of chromosomes you can define to perform MARS parallely.
 
+**--chr_start --chr_end:** For example: use "--chr_start 1 --chr_end 5"  will perform results for chromsomes 1,2,3,4,5. Use "--chr_start 22 --chr_end 22" will only assembly chromosome 22. 
+
 **--gnomad_flag_linked_snp; -gnomad_flag:** default = 0. If flag set to 1, MARS will output linked dbSNP for each SV.
 
 **--gnomad_dir:** If "gnomad_flag" set to 1, the users need to download gnomad VCF files and give a path to the folder which stores these gnomAD VCF files. (For example: use "wget https://storage.googleapis.com/gnomad-public/release/2.1.1/liftover_grch38/vcf/genomes/gnomad.genomes.r2.1.1.sites.10.liftover_grch38.vcf.bgz" to download gnomAD VCF file for chr10) For details, please check <a href="https://gnomad.broadinstitute.org/downloads/">gnomAD downloads website</a>) 
@@ -109,6 +114,7 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 **--HARP_flag:** default = 0. If flag set to 1, 
 
 **--Ape_ref_list:** If --HARP_flag set to 1, the users need to iniatize the Ape reference genomes they want to use. "Gorilla_gorilla_ref.fasta", "pan_troglodytes_ref.fasta", "pongo_abelii_ref.fasta", and "macaca_mulatta_ref.fasta" are the reference fasta files for each Ape. Each reference file is seperately by comma (",") 
+
 
 
 ## Output files:
