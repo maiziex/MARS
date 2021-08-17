@@ -118,7 +118,7 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 
 
 ## Output files:
-#### in the "MARS_step2_results/Final_tables" folder:
+#### 1. In the "MARS_step2_results/Final_tables" folder:
 1. SV_msa_table_chr*.txt  
 2. derived_del_msa_table_chr*.txt (set "--HARP_flag = 1")
 3. derived_ins_msa_table_chr*.txt (set "--HARP_flag = 1")
@@ -126,7 +126,7 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 5. SV_linked_with_gnomad_SNP_chr*.txt (set "-gnomad_flag = 1")
 6. Consensus_seq_for_SV_chr*.fasta
 
-#### in the "MARS_step2_results/MSA_SV_results_chr*/MSA_SV_files" folder, we also output txt/html files for each SV:
+#### 2. In the "MARS_step2_results/MSA_SV_results_chr*/MSA_SV_files" folder, we also output txt/html files for each SV:
 1. SV with 10bp left and right flanking regions around breakpoints, for example a txt file called by "chr22_29430067_29430067_ins_SV_Ref_bk_2.txt"
 "chr22_29430067_29430067_ins" is the name of the SV.
 <p align="center">
