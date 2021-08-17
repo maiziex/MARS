@@ -108,7 +108,6 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 
 **--Ape_ref_list:** If --HARP_flag set to 1, the users need to iniatize the Ape reference genomes they want to use. "Gorilla_gorilla_ref.fasta", "pan_troglodytes_ref.fasta", "pongo_abelii_ref.fasta", and "macaca_mulatta_ref.fasta" are the reference fasta files for each Ape. Each reference file is seperately by comma (",") 
 
-**--num_threads_bychr:** It is the number of threads you can define to perform assembly-based variant calling, which corresponds to number of chromosomes.
 
 ## Output files:
 #### Final tables:
