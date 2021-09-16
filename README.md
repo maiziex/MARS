@@ -54,8 +54,37 @@ chmod +x install.sh
 ./install.sh
 ```
 
-## source folder:
-After running "./install.sh", a folder "source" would be download, and reference fasta files for Gorrila, Orangutan, Chimpanzee, and Macaca which you can use for ancestral call. You could also just download them by yourself from the corresponding official websites. 
+## example data in Zenodo:
+Please download the example data <a href="https://zenodo.org/record/5512900">from Zenodo</a>.
+```
+Ape_ref
+|-Gorilla_gorilla_ref.fasta
+|-pongo_abelii_ref.fasta
+|-pan_troglodytes_ref.fasta
+|-macaca_mulatta_ref.fasta
+
+refdata-GRCh38-2.1.0
+|-fasta
+     |-genome.fa     
+     
+gnomAD_hg38_snp
+|-gnomad.genomes.r2.1.1.sites.22.liftover_grch38.vcf.bgz
+     
+Aquila_results_4samples
+|-HG00353
+|      |-Assembly_Contigs_files
+|                |-Aquila_Contig_chr22.fasta
+|-HG00250
+|      |-Assembly_Contigs_files
+|                |-Aquila_Contig_chr22.fasta			 
+|-HG00513
+|      |-Assembly_Contigs_files
+|                |-Aquila_Contig_chr22.fasta
+|-HG00512
+      |-Assembly_Contigs_files
+                 |-Aquila_Contig_chr22.fasta			 		 
+		 
+```
 
 ## Running The Code:
 Put the "MARS/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
