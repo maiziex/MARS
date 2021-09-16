@@ -39,16 +39,12 @@ MARS_step2 --help
 MARS utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="https://github.com/lh3/minimap2/tree/master/misc">paftools</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
 Or you could just run "./install.sh" to install them, but make sure you have installed "conda" and "wget" first. 
 
-To use MARS, please make sure install the below python packages through pip or conda. 
-pip install Bio 
-
-Conda install pysam
-
-Conda install pandas
-
-conda install minimap2
-
-conda install openpyxl
+To use MARS, please make sure install the below python packages through pip or conda. \
+pip install Bio \
+Conda install pysam\
+Conda install pandas\
+conda install minimap2\
+conda install openpyxl\
 
 ## Install through Github:
 ```
