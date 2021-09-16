@@ -4,13 +4,6 @@ chmod +x *.py
 chmod -R 777 k8-0.2.4
 cd ..
 
-
-# download the reference file (GRCh38)
-wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/source.tar.gz
-tar -xvf source.tar.gz
-rm source.tar.gz
-
-
 if ! [ -x "$(command -v samtools)" ];
 then
     echo 'Error: samtools is not installed...'
