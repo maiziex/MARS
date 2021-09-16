@@ -47,13 +47,14 @@ chmod +x install.sh
 MARS utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="https://github.com/lh3/minimap2/tree/master/misc">paftools</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
 Or you could just run "./install.sh" to install them, but make sure you have installed "conda" and "wget" first. 
 
-To use MARS, please make sure install the below python packages through pip or conda. \
+To use MARS, please also make sure install the below python packages through pip or conda. \
 pip install Bio \
 Conda install pysam\
 Conda install pandas\
 conda install minimap2\
 conda install openpyxl 
-## example data in Zenodo:
+
+## Example data in Zenodo:
 Please download the example data <a href="https://zenodo.org/record/5512900">from Zenodo</a>.
 ```
 Ape_ref
@@ -88,8 +89,6 @@ Aquila_results_4samples
 ## Running The Code:
 Put the "MARS/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
 Or use the fullpath of "MARS_step1.py" and "MARS_step2.py"
-
-*We provide  <a href="https://github.com/maiziex/MARS/blob/master/example_data/run_example_data.md">a example dataset</a> to run the whole pipeline.
 
 
 ### Step 1: Assembly-based structural variants calling for population
