@@ -44,7 +44,7 @@ pip install Bio \
 Conda install pysam\
 Conda install pandas\
 conda install minimap2\
-conda install openpyxl\
+conda install openpyxl 
 
 ## Install through Github:
 ```
