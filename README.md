@@ -40,10 +40,14 @@ MARS utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="
 Or you could just run "./install.sh" to install them, but make sure you have installed "conda" and "wget" first. 
 
 To use MARS, please make sure install the below python packages through pip or conda. 
-pip install Bio
+pip install Bio 
+
 Conda install pysam
+
 Conda install pandas
+
 conda install minimap2
+
 conda install openpyxl
 
 ## Install through Github:
