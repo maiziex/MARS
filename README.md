@@ -39,6 +39,13 @@ MARS_step2 --help
 MARS utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="https://github.com/lh3/minimap2/tree/master/misc">paftools</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
 Or you could just run "./install.sh" to install them, but make sure you have installed "conda" and "wget" first. 
 
+To use MARS, please make sure install the below python packages through pip or conda. 
+pip install Bio
+Conda install pysam
+Conda install pandas
+conda install minimap2
+conda install openpyxl
+
 ## Install through Github:
 ```
 git clone https://github.com/maiziex/MARS.git
@@ -128,7 +135,6 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 **--Ape_ref_list:** If --HARP_flag set to 1, the users need to iniatize the Ape reference genomes they want to use. "Gorilla_gorilla_ref.fasta", "pan_troglodytes_ref.fasta", "pongo_abelii_ref.fasta", and "macaca_mulatta_ref.fasta" are the reference fasta files for each Ape. Each reference file is seperately by comma (",") 
 
 
-
 ## Output files:
 #### 1. In the "MARS_step2_results/Final_tables" folder:
 1. SV_msa_table_chr*.txt  
@@ -137,6 +143,7 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 4. derived_complex_msa_table_chr*.txt  (set "--HARP_flag = 1")
 5. SV_linked_with_gnomad_SNP_chr*.txt (set "-gnomad_flag = 1")
 6. Consensus_seq_for_SV_chr*.fasta
+
 
 #### 2. In the "MARS_step2_results/MSA_SV_results_chr*/MSA_SV_files" folder, it includes txt/html files for each SV:
 1. SV with 10bp left and right flanking regions around breakpoints, for example a txt file called by "chr22_29430067_29430067_ins_SV_Ref_bk_2.txt",
