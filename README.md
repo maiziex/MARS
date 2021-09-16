@@ -155,7 +155,7 @@ MARS_step2.py  --in_dir MARS_step1_results --assembly_dir Aquila_results_4sample
 	</p>
 </p>
 2. SV with around 500bp left and right flanking regions: a MSA html file:
-<a href="https://github.com/maiziex/MARS/blob/master/source/chr21_23807653_23807725_del.html">a html file</a>
+<a href="https://github.com/maiziex/MARS/blob/master/source/chr22_23530481_23530481_ins.html">a html file</a>
 
 
 
