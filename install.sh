@@ -1,6 +1,7 @@
 # change permission
 cd bin
 chmod +x *.py
+chmod +x muscle3.8.31_i86linux64
 chmod -R 777 k8-0.2.4
 cd ..
 
