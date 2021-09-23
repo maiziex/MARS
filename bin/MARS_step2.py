@@ -12,15 +12,15 @@ import pysam
 import os
 import sys
 import glob
-from Define_SV_and_Ref_within_break_points_3 import *
-from extract_TandemRepeats_dict_use_concensus import * 
-from Generate_SV_type_table_from_MSA_new import *
-from Extract_validated_SV_for_flankingseq import *
-from Evaluate_derived_sv_by_flankingseq_global_align import *
-from Extract_Apes_seqs import *
-from Print_linked_SNPs_for_SV import *
-from Merge_more_fields_to_final_table import *
-from generate_MSA_geno import *
+from .Define_SV_and_Ref_within_break_points_3 import *
+from .extract_TandemRepeats_dict_use_concensus import * 
+from .Generate_SV_type_table_from_MSA_new import *
+from .Extract_validated_SV_for_flankingseq import *
+from .Evaluate_derived_sv_by_flankingseq_global_align import *
+from .Extract_Apes_seqs import *
+from .Print_linked_SNPs_for_SV import *
+from .Merge_more_fields_to_final_table import *
+from .generate_MSA_geno import *
 parser = ArgumentParser(description="Author: maizie.zhou@vanderbilt.edu\n",usage='use "python3 %(prog)s --help" for more information')
 parser.add_argument('--in_dir','-i_dir', help="The input folder where you store vcf files",required=True)
 parser.add_argument('--out_dir','-o_dir', help="The folder name you can define to store the final results",default="./MARS_step2_results")
