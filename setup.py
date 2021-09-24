@@ -12,7 +12,6 @@ package_data={'bin' : ['paftools/*',
                      'trf_tools/*',
                      ]},  
 entry_points={'console_scripts':['MARS_step1=bin.MARS_step1:main',
-'MARS_step2=bin.MARS_step2:main',
-'MARS_step3=bin.MARS_step3:main'
+'MARS_step2=bin.MARS_step2:main'
                ]},
 zip_safe=False)
