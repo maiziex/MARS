@@ -22,7 +22,7 @@
 </p>
 
 
-[![BioConda Install](https://img.shields.io/conda/dn/bioconda/aquila.svg?style=flag&label=BioConda%20install)](https://anaconda.org/bioconda/mars)  
+[![BioConda Install](https://img.shields.io/conda/dn/bioconda/mars.svg?style=flag&label=BioConda%20install)](https://anaconda.org/bioconda/mars)  
 ## Install through Bioconda (The latest version 1.0.0):
 ```
 conda install MARS
