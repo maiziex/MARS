@@ -967,7 +967,8 @@ def Run_MARS_step2_all(out_dir,out_dir_all,out_dir_table,in_dir,assembly_dir,ref
 
 
 
-if __name__ == "__main__":
+
+def main():
     out_dir = args.out_dir + "/"
     if os.path.exists(out_dir):
         print("using existing output folder: " + out_dir)
@@ -1031,3 +1032,7 @@ if __name__ == "__main__":
             input_table = out_dir_table + "SV_msa_table_chr" + str(chr_num) + "_2.txt"
             output_table = out_dir_table + "SV_msa_table_chr" + str(chr_num) + "_add_AncestralState.txt"
             Merge_table(input_table,output_table,derived_del_dict,derived_ins_dict,derived_complex_dict)
+
+            
+if __name__ == "__main__":
+    main()
