@@ -30,7 +30,7 @@ else:
 
 
 def Call_one_sample(assembly_dir,out_dir,ref_file,sample_name,SV_len,num_of_threads,all_regions_flag,chr_start,chr_end,xin):
-    use_cmd = code_path + "Aquila_assembly_based_variants_call.py " + " --assembly_dir " + assembly_dir + sample_name + "/"  + " --ref_file " + ref_file + " --num_of_threads " + str(num_of_threads) + " --all_regions_flag " + str(all_regions_flag) + " --out_dir " + out_dir + sample_name + "/" + " --var_size " + str(SV_len) + " --chr_start " + str(chr_start) + " --chr_end " + str(chr_end)
+    use_cmd = "python3 "+code_path + "Aquila_assembly_based_variants_call.py " + " --assembly_dir " + assembly_dir + sample_name + "/"  + " --ref_file " + ref_file + " --num_of_threads " + str(num_of_threads) + " --all_regions_flag " + str(all_regions_flag) + " --out_dir " + out_dir + sample_name + "/" + " --var_size " + str(SV_len) + " --chr_start " + str(chr_start) + " --chr_end " + str(chr_end)
     Popen(use_cmd,shell=True).wait()
 
 
