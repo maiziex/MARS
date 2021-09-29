@@ -1,12 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages, Extension
 setup(name='Mars',      
-version='1.0',      
+version='1.2',      
 description='Multiple Alignment-based Refinement of SVs',      
 author='Xin Zhou',      
-author_email='mazie.zhou@vanderbilt.edu',      
+author_email='maizie.zhou@vanderbilt.edu',      
 install_requires=['pysam','pandas','minimap2','openpyxl','samtools'],         
 license='MIT',      
-packages=['bin',],
+packages=find_packages(),
 package_data={'bin' : ['paftools/*',
                      'k8-0.2.4/*',
                      'trf_tools/*',
