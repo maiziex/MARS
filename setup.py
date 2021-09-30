@@ -14,6 +14,7 @@ package_data={'bin' : ['paftools/paftools.js',
                        'k8-0.2.4/k8.js',
                        'k8-0.2.4/khash.h',
                      'trf_tools/trf',
+                       'muscle3.8.31_i86linux64',
                      ]},  
 entry_points={'console_scripts':['MARS_step1=bin.MARS_step1:main',
 'MARS_step2=bin.MARS_step2:main'
