@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages, Extension
 setup(name='Mars',      
-version='1.2.1',      
+version='1.2.2',      
 description='Multiple Alignment-based Refinement of SVs',      
 author='Xin Zhou',      
 author_email='maizie.zhou@vanderbilt.edu',      
