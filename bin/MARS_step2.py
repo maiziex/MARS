@@ -873,7 +873,7 @@ def Run_step2_by_chr(out_dir,out_dir_all,out_dir_table,in_dir,assembly_dir,ref_d
         else:
             extract_ref_chr(ref_file,chr_num,ref_dir)
             read_ref(ref_dir + "genome_ref_chr" + str(chr_num) + ".fasta",chr_num,ref_dir)
-        Align_hp_fasta_to_bam(assembly_dir,out_dir,chr_num)
+        Align_hp_fasta_to_bam(assembly_dir,out_dir,chr_num,ref_dir)
         for sample_name in sample_list:
             hp1_file = assembly_dir + sample_name + "/" + "Assembly_Contigs_files/" + "Aquila_Contig_chr" + str(chr_num) + "_hp1.fasta"  
             hp2_file = assembly_dir + sample_name + "/" + "Assembly_Contigs_files/" + "Aquila_Contig_chr" + str(chr_num) + "_hp2.fasta"  
