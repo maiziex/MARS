@@ -374,7 +374,7 @@ def get_sam(fasta_file,sam_file,bam_file,chr_num,ref_dir,xin):
         Popen(idx_cmd,shell=True).wait()
 
 
-def Align_hp_fasta_to_bam(in_dir,out_dir,chr_num):
+def Align_hp_fasta_to_bam(in_dir,out_dir,chr_num, ref_dir):
     for sample_name in sample_list:
         out_dir_sample = out_dir + sample_name + "/"
         if os.path.exists(out_dir_sample):
