@@ -951,7 +951,7 @@ def Run_MARS_step2_all(out_dir,out_dir_all,out_dir_table,in_dir,assembly_dir,ref
     for chr_num in range(chr_start,chr_end+1):
         count += 1
         pool.apply_async(Run_step2_by_chr,(out_dir,out_dir_all,out_dir_table,in_dir,assembly_dir,ref_dir,ref_file,chr_num,chr_num,gnomad_flag,HARP_flag,num_of_threads,"xin"))
-        Run_step2_by_chr(out_dir,out_dir_all,out_dir_table,in_dir,assembly_dir,ref_dir,ref_file,chr_num,chr_num,gnomad_flag,HARP_flag,num_of_threads,"xin")
+        #Run_step2_by_chr(out_dir,out_dir_all,out_dir_table,in_dir,assembly_dir,ref_dir,ref_file,chr_num,chr_num,gnomad_flag,HARP_flag,num_of_threads,"xin")
         if (count - 1)%num_of_threads_bychr == 0 or (count - 1) == total_num:
             pool.close()
             while len(active_children()) > 1:
