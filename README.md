@@ -23,7 +23,7 @@
 
 
 
-## Install through Bioconda (The latest version 1.0.0):
+## Install through Bioconda (The latest version 1.2.4):
 [![BioConda Install](https://img.shields.io/conda/dn/bioconda/mars.svg?style=flag&label=BioConda%20install)](https://anaconda.org/bioconda/mars)  
 ```
 conda install MARS
